@@ -79,7 +79,11 @@ a{
 .flask-link{
   color: #3f51b5;
   font-size: 24px;
-  text-align: center;
+}
+
+.flask-meta-item{
+	display: inline;
+	margin-right: 15px;
 }
 
 /*
@@ -99,3 +103,7 @@ we add class container to both the content and the logo instead
 	margin: 0 auto; /* enable us to center it*/
 	max-width: 800px;
 }
+
+/*
+	
+*/
