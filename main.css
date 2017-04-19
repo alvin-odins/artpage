@@ -118,5 +118,20 @@ we add class container to both the content and the logo instead
 }
 
 /*
-	
+	States
 */
+.is-liked{
+	animation: flash 2s;
+}
+
+/*
+	Animation
+*/
+@keyframes flash{
+	from, 50%, to{
+		opacity: 0;
+	}
+	25%, 75%{
+		opacity: 1;
+	}
+}
