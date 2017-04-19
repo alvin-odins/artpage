@@ -25,7 +25,9 @@ h1,h2,h3,h4,h5{
 }
 
 ol{
-
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 li{
@@ -47,7 +49,12 @@ a{
   .cover-banner{
     background-color: #3f51b5;
     color: #fff; /* applies to text inside*/
-    padding: 20px 0;
+/*
+		margin: 0 auto;  enable us to center it
+		max-width: 800px;
+*/
+    margin-bottom: 40px;
+		padding: 20px 0;
     text-align: center;
   }
 
@@ -59,3 +66,36 @@ a{
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  /***
+      flask
+  */
+.flask-item{
+  border-bottom: 1px solid #b6b6b6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.flask-link{
+  color: #3f51b5;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*
+	flask container
+*/
+
+/*
+we add class container to both the content and the logo instead
+.content{
+	max-width: 800px;
+	margin: 0 auto;
+	
+}
+*/
+
+.container{
+	margin: 0 auto; /* enable us to center it*/
+	max-width: 800px;
+}
