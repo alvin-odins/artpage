@@ -23,13 +23,34 @@
 				<header class="subheader">
 					<h1>Latest news</h1>
 					<p>The latest events in the art page.
-						<a href="#">Add a post now</a>
+						<a class="js-add-link" href="#">Add a post now</a>
 					</p>
-					<form class="form">
+					<form class="form js-form">
 						<label class="form-label" for="form-link-input">Add a new posr:</label>
 						<input class="form-input" type="text" />
 					</form>
 				</header>
+				
+				<div class='modal js-modal'>
+          <div class='modal-media'>
+            <img src='https://s.gravatar.com/avatar/2f9c4025a3e6d10bf091b6279fb28130?s=500&r=g' alt='' />
+            <h3 class='modal-media-title'>Dan Denney</h3>
+          </div>
+          <div class='modal-content'>
+            <h3>About Me</h3>
+            <p>I'm a seriously good copy and paster. Front-end dev for @codeschool, lover of all things web design/dev related and founder of @frontendconf.</p>
+
+            <ol class='flask'>
+              <li class='flask-item'>
+                <a class='flask-link' href='#'>Frontend Design</a>
+              </li>
+              <li class='flask-item'>
+                <a class='flask-link' href='#'>JavaScript Modules: A Beginner's Guide</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class='modal-overlay js-modal-overlay'></div>
 				
 				<ol class="flask">
 					<li class="flask-item">
@@ -37,7 +58,7 @@
 						<ul  class="flask-meta">
 							<li class="flask-meta-item">
 								<em>Posted by:</em>
-								<a href="">Danny Drew</a>
+								<a class="js-show-modal" href="#">Danny Drew</a>
 							</li>
 							<li class="flask-meta-item">
 								<a href="">comment</a>
@@ -95,6 +116,8 @@
 					</ol>
 			</div>
     </main>
+		
+		
 		
 		<script src="jquery-2.1.4.min.js"></script>
 		<script src="app.js"></script>
